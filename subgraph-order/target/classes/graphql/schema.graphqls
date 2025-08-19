@@ -1,0 +1,12 @@
+type Order @key(fields: "id") {
+  id: ID!
+  userId: ID!
+  total: Float!
+  createdAt: String!
+}
+type Query {
+  ordersByUser(userId: ID!, first: Int = 10): [Order!]!
+}
+type Mutation {
+  createOrder(id: ID!, userId: ID!, total: Float!): Order!
+}

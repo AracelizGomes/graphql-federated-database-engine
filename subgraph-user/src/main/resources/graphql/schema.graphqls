@@ -1,0 +1,17 @@
+type User @key(fields: "id") {
+  id: ID!
+  email: String!
+  name: String
+  orders(first: Int = 10): [Order!]!
+}
+type Query {
+  userById(id: ID!): User
+  userByEmail(email: String!): User
+}
+type Mutation {
+  upsertUser(id: ID!, email: String!, name: String): User
+}
+type Order @key(fields: "id") {
+  id: ID!
+  total: Float!
+}

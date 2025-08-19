@@ -1,0 +1,6 @@
+server:
+  port: 8080
+gfde:
+  subgraphs:
+    user: http://localhost:8081/graphql
+    order: http://localhost:8082/graphql
