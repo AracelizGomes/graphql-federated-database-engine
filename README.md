@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-- *GFDE (GraphQL Federated Database Engine)** is an open source project that reimagines GraphQL federation as a **database-native concept**.
+- **GFDE (GraphQL Federated Database Engine)** is an open source project that reimagines GraphQL federation as a **database-native concept**.
 
 Instead of stitching services at the middleware layer (e.g., Apollo Federation), GFDE integrates federation directly into the **execution kernel** and introduces a **Direct Memory Execution Protocol (DMEP)** for fast, low-latency query traversal across distributed data sources.
 
