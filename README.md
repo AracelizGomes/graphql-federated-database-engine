@@ -56,8 +56,7 @@ GFDE demonstrates that **federation doesn’t have to mean slow**.
             |
             v
 +--------------------------+
-|   Storage Abstraction    |
-|  (SQL / KV / Doc / Graph)|
+|         Data Store       |
 +--------------------------+
 ```
 
