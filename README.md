@@ -28,15 +28,10 @@ GFDE’s mission is to eliminate the **N+1 problem**, reduce network overhead, a
 In simulated benchmarks (identical schema/data/hardware):
 
 | Architecture | p95 @ 200 RPS | p95 @ 800 RPS | Peak QPS under 200ms p95 | Notes |
-
 |--------------|---------------|---------------|--------------------------|-------|
-
 | Apollo Federation | ~120ms | ~480ms | 400 QPS | Hop overhead & N+1 bottlenecks |
-
 | Monolithic GraphQL | ~95ms | ~280ms | 700 QPS | Strong mid-load, bottlenecks at scale |
-
 | **GFDE** | **70ms** | **160ms** | **1100 QPS** | ~3× Apollo throughput |
-
 GFDE demonstrates that **federation doesn’t have to mean slow**.
 
 - --
@@ -44,41 +39,23 @@ GFDE demonstrates that **federation doesn’t have to mean slow**.
 # **🧩 Architecture**
 
 +--------------------------+
-
 |   GraphQL Query Parser   |
-
 +--------------------------+
-
 |
-
 v
-
 +--------------------------+
-
 |  Federated Query Planner |
-
 +--------------------------+
-
 |
-
 v
-
 +--------------------------+
-
 |  Execution Engine (DMEP) |
-
 +--------------------------+
-
 |
-
 v
-
 +--------------------------+
-
 |   Storage Abstraction    |
-
 |  (SQL / KV / Doc / Graph)|
-
 +--------------------------+
 
 # **License**
