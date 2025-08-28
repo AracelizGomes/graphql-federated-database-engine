@@ -32,32 +32,34 @@ In simulated benchmarks (identical schema/data/hardware):
 | Apollo Federation | ~120ms | ~480ms | 400 QPS | Hop overhead & N+1 bottlenecks |
 | Monolithic GraphQL | ~95ms | ~280ms | 700 QPS | Strong mid-load, bottlenecks at scale |
 | **GFDE** | **70ms** | **160ms** | **1100 QPS** | ~3× Apollo throughput |
+
 GFDE demonstrates that **federation doesn’t have to mean slow**.
 
 - --
 
 # **🧩 Architecture**
 
+'''
 +--------------------------+
-|   GraphQL Query Parser   |
+|   GraphQL Query Parser   |
 +--------------------------+
-|
-v
+            |
+            v
 +--------------------------+
-|  Federated Query Planner |
+|  Federated Query Planner |
 +--------------------------+
-|
-v
+            |
+            v
 +--------------------------+
-|  Execution Engine (DMEP) |
+|  Execution Engine (DMEP) |
 +--------------------------+
-|
-v
+            |
+            v
 +--------------------------+
-|   Storage Abstraction    |
-|  (SQL / KV / Doc / Graph)|
+|   Storage Abstraction    |
+|  (SQL / KV / Doc / Graph)|
 +--------------------------+
-
+'''
 # **License**
 
 GFDE is open-sourced under the [Apache 2.0 License](notion://www.notion.so/thelatinainvestor/LICENSE).
