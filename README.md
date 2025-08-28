@@ -39,7 +39,7 @@ GFDE demonstrates that **federation doesn’t have to mean slow**.
 
 # **🧩 Architecture**
 
-'''
+```
 +--------------------------+
 |   GraphQL Query Parser   |
 +--------------------------+
@@ -59,7 +59,8 @@ GFDE demonstrates that **federation doesn’t have to mean slow**.
 |   Storage Abstraction    |
 |  (SQL / KV / Doc / Graph)|
 +--------------------------+
-'''
+```
+
 # **License**
 
 GFDE is open-sourced under the [Apache 2.0 License](notion://www.notion.so/thelatinainvestor/LICENSE).
